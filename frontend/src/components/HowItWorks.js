@@ -110,7 +110,7 @@ const HowItWorks = () => {
               </div>
               <div className="relative">
                 <img 
-                  src="https://images.unsplash.com/photo-1573164574230-db1d5e960238" 
+                  src="https://i.imgur.com/FoHx6aq.jpg" 
                   alt="AI Assistants in Action" 
                   className="rounded-xl shadow-lg"
                 />
