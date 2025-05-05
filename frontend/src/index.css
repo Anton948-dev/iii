@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Custom scrollbar styles and other global styles will be applied through App.css */
+
+/* Ensure smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
