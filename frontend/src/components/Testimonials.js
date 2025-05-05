@@ -42,7 +42,7 @@ const Testimonials = () => {
       {/* Background with subtle pattern and gradient */}
       <div className="absolute inset-0 opacity-20 pointer-events-none">
         <img 
-          src="https://images.unsplash.com/photo-1597733336794-12d05021d510" 
+          src="https://i.imgur.com/a4M0uKm.jpg" 
           alt="Abstract Background" 
           className="w-full h-full object-cover object-center"
         />
