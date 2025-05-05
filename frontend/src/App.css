@@ -1,38 +1,133 @@
-.App {
-    text-align: center;
+/* Global Styles */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-sans bg-neutral-dark text-neutral-light;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-bold tracking-tight;
+  }
+  
+  h1 {
+    @apply text-5xl md:text-6xl lg:text-7xl leading-tight md:leading-tight lg:leading-tight;
+  }
+  
+  h2 {
+    @apply text-3xl md:text-4xl lg:text-5xl leading-tight;
+  }
+  
+  h3 {
+    @apply text-2xl md:text-3xl leading-snug;
+  }
+  
+  p {
+    @apply leading-relaxed;
+  }
 }
 
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
+/* Glass effect */
+.glass {
+  @apply bg-neutral-medium/30 backdrop-blur-md border border-white/10 shadow-glass;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
+.glass-hover {
+  @apply transition-all duration-300 hover:shadow-glass-hover;
 }
 
-.App-header {
-    background-color: #0f0f10;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+/* Gradient text */
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-primary;
 }
 
-.App-link {
-    color: #61dafb;
+/* Button styles */
+.btn {
+  @apply inline-flex items-center justify-center px-6 py-3 text-base font-medium rounded-xl transition-all duration-300 ease-in-out transform;
 }
 
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+.btn-primary {
+  @apply bg-gradient-primary text-white shadow-md hover:shadow-lg hover:scale-105;
+}
+
+.btn-secondary {
+  @apply bg-gradient-secondary text-neutral-dark shadow-md hover:shadow-lg hover:scale-105;
+}
+
+.btn-outline {
+  @apply border-2 border-primary text-primary hover:bg-primary hover:text-white;
+}
+
+/* Card styles */
+.card {
+  @apply bg-neutral-medium/40 backdrop-blur-md rounded-2xl shadow-card p-6 transition-all duration-300;
+}
+
+.card-hover {
+  @apply hover:shadow-card-hover hover:-translate-y-1;
+}
+
+/* Section styles */
+.section {
+  @apply py-16 md:py-24;
+}
+
+/* Animation keyframes */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Pattern background */
+.pattern-bg {
+  background-image: radial-gradient(rgba(92, 61, 245, 0.15) 2px, transparent 2px);
+  background-size: 30px 30px;
+}
+
+/* Gradient borders */
+.gradient-border {
+  position: relative;
+  border-radius: 12px;
+}
+
+.gradient-border::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, #5C3DF5, #00C2CB);
+  z-index: -1;
+  border-radius: 14px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-neutral-dark;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary/50 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary;
 }
