@@ -11,7 +11,7 @@ const Hero = () => {
       {/* Background image */}
       <div className="absolute inset-0 -z-10 opacity-40">
         <img 
-          src="https://i.imgur.com/FkDPxdx.jpg" 
+          src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b" 
           alt="AI Technology Background" 
           className="w-full h-full object-cover object-center"
         />
