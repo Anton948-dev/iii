@@ -180,7 +180,7 @@ const Features = () => {
               >
                 <div className="rounded-2xl overflow-hidden shadow-xl">
                   <img 
-                    src="https://i.imgur.com/lHQoJM0.jpg" 
+                    src="https://images.unsplash.com/photo-1560264280-88b68371db39" 
                     alt="Business Process Automation" 
                     className="w-full h-auto"
                   />
