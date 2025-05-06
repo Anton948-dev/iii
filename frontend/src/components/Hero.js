@@ -71,7 +71,7 @@ const Hero = () => {
               <div className="rounded-xl overflow-hidden">
                 <motion.img 
                   className="w-full h-auto" 
-                  src="https://i.imgur.com/1Gcn5EA.jpg"
+                  src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7"
                   alt="AI Assistant and Telegram Bot"
                   initial={{ scale: 1.2 }}
                   animate={{ scale: 1 }}
